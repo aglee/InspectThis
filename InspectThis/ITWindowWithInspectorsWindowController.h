@@ -1,5 +1,5 @@
 //
-//  ITWindowController.h
+//  ITWindowWithInspectorsWindowController.h
 //  InspectThis
 //
 //  Created by Andy Lee on 6/9/13.
@@ -8,14 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class ITInspectorContainerViewController;
+@class ITMultiInspectorViewController;
 
 /*!
  * Abstract base class.  Manages a window that contains a "multi-inspector view"
- * as defined by ITInspectorContainerViewController.
+ * as defined by ITMultiInspectorViewController.  Every instance has the same
+ * set of inspectors.
  */
 @interface ITWindowWithInspectorsWindowController : NSWindowController
 
-@property (strong) IBOutlet ITInspectorContainerViewController *inspectorContainerViewController;
+@property (strong) IBOutlet ITMultiInspectorViewController *multiInspectorViewController;
 
 @end

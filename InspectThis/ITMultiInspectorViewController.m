@@ -1,14 +1,14 @@
 //
-//  ITInspectorContainerViewController.m
+//  ITMultiInspectorViewController.m
 //  InspectThis
 //
 //  Created by Andy Lee on 6/9/13.
 //  Copyright (c) 2013 Andy Lee. All rights reserved.
 //
 
-#import "ITInspectorContainerViewController.h"
+#import "ITMultiInspectorViewController.h"
 
-@implementation ITInspectorContainerViewController
+@implementation ITMultiInspectorViewController
 {
 	NSMutableArray *_inspectorViewControllers;
 }

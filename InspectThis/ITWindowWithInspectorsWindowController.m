@@ -1,5 +1,5 @@
 //
-//  ITWindowController.m
+//  ITWindowWithInspectorsWindowController.m
 //  InspectThis
 //
 //  Created by Andy Lee on 6/9/13.
@@ -7,7 +7,7 @@
 //
 
 #import "ITWindowWithInspectorsWindowController.h"
-#import "ITInspectorContainerViewController.h"
+#import "ITMultiInspectorViewController.h"
 
 @implementation ITWindowWithInspectorsWindowController
 
@@ -29,7 +29,7 @@
 {
 	NSViewController *inspectorVC = [[NSViewController alloc] initWithNibName:nibName bundle:nil];
 
-	[_inspectorContainerViewController addInspectorWithViewController:inspectorVC];
+	[[self multiInspectorViewController] addInspectorWithViewController:inspectorVC];
 }
 
 @end

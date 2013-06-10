@@ -13,8 +13,8 @@
  */
 @interface ITDataModel : NSObject
 
+@property (copy) NSString *text;
 @property (copy) NSColor *fontColor;
 @property (copy) NSColor *backgroundColor;
-@property (copy) NSString *text;
 
 @end

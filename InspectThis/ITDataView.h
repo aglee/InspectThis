@@ -11,8 +11,8 @@
 @class ITDataModel;
 
 /*!
- * Draws the data given by an ITDataModel.  Observes changes to dataModel's
- * properties and redraws automatically when they change.
+ * Draws the data given by an ITDataModel.  Observes changes to various
+ * properties of the dataModel, and redraws when they change.
  */
 @interface ITDataView : NSView
 

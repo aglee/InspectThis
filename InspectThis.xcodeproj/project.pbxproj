@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		73265D0C1764E5E9003AABF3 /* ITDataWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73265D0B1764E5E9003AABF3 /* ITDataWindowController.m */; };
 		73265D111764EA9C003AABF3 /* ITDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73265D101764EA9C003AABF3 /* ITDataView.m */; };
-		73265D141764F3B4003AABF3 /* ITInspectorContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73265D131764F3B4003AABF3 /* ITInspectorContainerViewController.m */; };
+		73265D141764F3B4003AABF3 /* ITMultiInspectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73265D131764F3B4003AABF3 /* ITMultiInspectorViewController.m */; };
 		737685301765399500589EF2 /* ITDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376852F1765399500589EF2 /* ITDataModel.m */; };
 		7376853717661AA300589EF2 /* BackgroundColorInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7376853517661AA300589EF2 /* BackgroundColorInspector.xib */; };
 		7376853A17661D1800589EF2 /* TextInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7376853817661D1800589EF2 /* TextInspector.xib */; };
@@ -31,8 +31,8 @@
 		73265D0B1764E5E9003AABF3 /* ITDataWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITDataWindowController.m; sourceTree = "<group>"; };
 		73265D0F1764EA9C003AABF3 /* ITDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITDataView.h; sourceTree = "<group>"; };
 		73265D101764EA9C003AABF3 /* ITDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITDataView.m; sourceTree = "<group>"; };
-		73265D121764F3B4003AABF3 /* ITInspectorContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITInspectorContainerViewController.h; sourceTree = "<group>"; };
-		73265D131764F3B4003AABF3 /* ITInspectorContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITInspectorContainerViewController.m; sourceTree = "<group>"; };
+		73265D121764F3B4003AABF3 /* ITMultiInspectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITMultiInspectorViewController.h; sourceTree = "<group>"; };
+		73265D131764F3B4003AABF3 /* ITMultiInspectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITMultiInspectorViewController.m; sourceTree = "<group>"; };
 		7376852E1765399500589EF2 /* ITDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITDataModel.h; sourceTree = "<group>"; };
 		7376852F1765399500589EF2 /* ITDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITDataModel.m; sourceTree = "<group>"; };
 		7376853617661AA300589EF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BackgroundColorInspector.xib; sourceTree = "<group>"; };
@@ -86,14 +86,8 @@
 			children = (
 				73E6953F1764D76C00C6D7D0 /* ITAppDelegate.h */,
 				73E695401764D76C00C6D7D0 /* ITAppDelegate.m */,
-				73E6954B1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.h */,
-				73E6954C1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.m */,
-				73265D0A1764E5E9003AABF3 /* ITDataWindowController.h */,
-				73265D0B1764E5E9003AABF3 /* ITDataWindowController.m */,
-				7376853B1766202A00589EF2 /* ITFloatingInspectorWindowController.h */,
-				7376853C1766202A00589EF2 /* ITFloatingInspectorWindowController.m */,
-				73265D121764F3B4003AABF3 /* ITInspectorContainerViewController.h */,
-				73265D131764F3B4003AABF3 /* ITInspectorContainerViewController.m */,
+				737685441766743C00589EF2 /* Windows with Inspectors */,
+				737685451766745C00589EF2 /* Inspector Views */,
 			);
 			name = "Controller Classes";
 			sourceTree = "<group>";
@@ -105,6 +99,49 @@
 				7376852F1765399500589EF2 /* ITDataModel.m */,
 			);
 			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		737685441766743C00589EF2 /* Windows with Inspectors */ = {
+			isa = PBXGroup;
+			children = (
+				73E6954B1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.h */,
+				73E6954C1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.m */,
+				737685461766747400589EF2 /* Data Window */,
+				737685471766747B00589EF2 /* Floating Inspector Window */,
+			);
+			name = "Windows with Inspectors";
+			sourceTree = "<group>";
+		};
+		737685451766745C00589EF2 /* Inspector Views */ = {
+			isa = PBXGroup;
+			children = (
+				73265D121764F3B4003AABF3 /* ITMultiInspectorViewController.h */,
+				73265D131764F3B4003AABF3 /* ITMultiInspectorViewController.m */,
+				7376853517661AA300589EF2 /* BackgroundColorInspector.xib */,
+				7376854117666C8D00589EF2 /* FontColorInspector.xib */,
+				7376853817661D1800589EF2 /* TextInspector.xib */,
+			);
+			name = "Inspector Views";
+			sourceTree = "<group>";
+		};
+		737685461766747400589EF2 /* Data Window */ = {
+			isa = PBXGroup;
+			children = (
+				73265D0A1764E5E9003AABF3 /* ITDataWindowController.h */,
+				73265D0B1764E5E9003AABF3 /* ITDataWindowController.m */,
+				73E6954F1764D96F00C6D7D0 /* DataWindow.xib */,
+			);
+			name = "Data Window";
+			sourceTree = "<group>";
+		};
+		737685471766747B00589EF2 /* Floating Inspector Window */ = {
+			isa = PBXGroup;
+			children = (
+				7376853B1766202A00589EF2 /* ITFloatingInspectorWindowController.h */,
+				7376853C1766202A00589EF2 /* ITFloatingInspectorWindowController.m */,
+				7376853E1766261000589EF2 /* FloatingInspectorWindow.xib */,
+			);
+			name = "Floating Inspector Window";
 			sourceTree = "<group>";
 		};
 		73E695211764D76C00C6D7D0 = {
@@ -173,11 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				73E695421764D76C00C6D7D0 /* MainMenu.xib */,
-				73E6954F1764D96F00C6D7D0 /* DataWindow.xib */,
-				7376853E1766261000589EF2 /* FloatingInspectorWindow.xib */,
-				7376853517661AA300589EF2 /* BackgroundColorInspector.xib */,
-				7376854117666C8D00589EF2 /* FontColorInspector.xib */,
-				7376853817661D1800589EF2 /* TextInspector.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -257,7 +289,7 @@
 				73E6954D1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.m in Sources */,
 				73265D0C1764E5E9003AABF3 /* ITDataWindowController.m in Sources */,
 				73265D111764EA9C003AABF3 /* ITDataView.m in Sources */,
-				73265D141764F3B4003AABF3 /* ITInspectorContainerViewController.m in Sources */,
+				73265D141764F3B4003AABF3 /* ITMultiInspectorViewController.m in Sources */,
 				737685301765399500589EF2 /* ITDataModel.m in Sources */,
 				7376853D1766202A00589EF2 /* ITFloatingInspectorWindowController.m in Sources */,
 			);

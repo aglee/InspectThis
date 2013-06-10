@@ -9,7 +9,7 @@
 #import "ITDataWindowController.h"
 #import "ITDataModel.h"
 #import "ITDataView.h"
-#import "ITInspectorContainerViewController.h"
+#import "ITMultiInspectorViewController.h"
 
 @implementation ITDataWindowController
 {
@@ -24,7 +24,11 @@
 	
 	_dataModels = [[NSMutableArray alloc] init];
 	[self _loadDataModels];
+
 	[_dataModelsArrayController setContent:_dataModels];
+	[_dataModelsArrayController setSelectionIndex:0];
+
+	[[self window] recalculateKeyViewLoop];
 }
 
 #pragma mark NSTableViewDelegate methods
@@ -35,7 +39,7 @@
 	ITDataModel *selectedDataModel = [self _dataModelAtIndex:selectedRow];
 	
 	[_dataView setDataModel:selectedDataModel];
-	[[self inspectorContainerViewController] setObjectToInspect:selectedDataModel];
+	[[self multiInspectorViewController] setObjectToInspect:selectedDataModel];
 }
 
 #pragma mark NSSplitViewDelegate methods

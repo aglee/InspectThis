@@ -73,7 +73,7 @@
 
 - (NSArray *)_modelPropertiesToObserve
 {
-	return @[ @"backgroundColor", @"fontColor", @"text" ];
+	return @[ @"text", @"backgroundColor", @"fontColor" ];
 }
 
 - (void)_startObservingModelProperties

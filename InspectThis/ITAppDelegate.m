@@ -30,12 +30,12 @@
 	ITWindowWithInspectorsWindowController *wc = [[ITDataWindowController alloc] initWithWindowNibName:@"DataWindow"];
 
 	[_dataWindowControllers addObject:wc];
-	[wc showWindow:nil];
+	[[wc window] makeKeyAndOrderFront:nil];
 }
 
 - (IBAction)showFloatingInspectorWindow:(id)sender
 {
-	[_floatingInspectorWindowController showWindow:nil];
+	[[_floatingInspectorWindowController window] orderFront:nil];
 }
 
 #pragma mark NSApplicationDelegate methods
@@ -50,8 +50,8 @@
 	[self _startListeningForWindowClose];
 
 	// Display initial windows.
-	[self openNewDataWindow:nil];
 	[self showFloatingInspectorWindow:nil];
+	[self openNewDataWindow:nil];
 }
 
 #pragma mark Private methods

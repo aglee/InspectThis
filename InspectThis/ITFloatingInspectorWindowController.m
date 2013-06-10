@@ -8,10 +8,11 @@
 
 #import "ITFloatingInspectorWindowController.h"
 #import "ITDataWindowController.h"
-#import "ITInspectorContainerViewController.h"
+#import "ITMultiInspectorViewController.h"
 
 @interface ITFloatingInspectorWindowController ()
-@property (strong) ITInspectorContainerViewController *mainContainerViewController;
+/*! The main window's multi-inspector view controller. */
+@property (strong) ITMultiInspectorViewController *mainMultiInspectorViewController;
 @end
 
 @implementation ITFloatingInspectorWindowController
@@ -43,16 +44,18 @@
 
 		if ([windowDelegate isKindOfClass:[ITDataWindowController class]])
 		{
-			[self setMainContainerViewController:[windowDelegate inspectorContainerViewController]];
+			[self setMainMultiInspectorViewController:[(ITDataWindowController *)windowDelegate multiInspectorViewController]];
 		}
 		else
 		{
-			[self setMainContainerViewController:nil];
+			[self setMainMultiInspectorViewController:nil];
 		}
 	}
 	else
 	{
-		[[self inspectorContainerViewController] setObjectToInspect:[_mainContainerViewController objectToInspect]];
+		id objectToInspect = [[self mainMultiInspectorViewController] objectToInspect];
+
+		[[self multiInspectorViewController] setObjectToInspect:objectToInspect];
 	}
 }
 
@@ -65,7 +68,7 @@
 			   options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld)
 			   context:NULL];
 	[self addObserver:self
-		   forKeyPath:@"mainContainerViewController.objectToInspect"
+		   forKeyPath:@"mainMultiInspectorViewController.objectToInspect"
 			  options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld)
 			  context:NULL];
 }

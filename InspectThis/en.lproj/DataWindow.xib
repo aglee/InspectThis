@@ -314,11 +314,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">inspectorContainerViewController</string>
+						<string key="label">multiInspectorViewController</string>
 						<reference key="source" ref="1001"/>
 						<reference key="destination" ref="282688636"/>
 					</object>
-					<int key="connectionID">64</int>
+					<int key="connectionID">72</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -357,7 +357,7 @@
 						<string key="label">content: arrangedObjects</string>
 						<reference key="source" ref="161541075"/>
 						<reference key="destination" ref="542157244"/>
-						<object class="NSNibBindingConnector" key="connector">
+						<object class="NSNibBindingConnector" key="connector" id="710306891">
 							<reference key="NSSource" ref="161541075"/>
 							<reference key="NSDestination" ref="542157244"/>
 							<string key="NSLabel">content: arrangedObjects</string>
@@ -367,6 +367,23 @@
 						</object>
 					</object>
 					<int key="connectionID">58</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">selectionIndexes: selectionIndexes</string>
+						<reference key="source" ref="161541075"/>
+						<reference key="destination" ref="542157244"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="161541075"/>
+							<reference key="NSDestination" ref="542157244"/>
+							<string key="NSLabel">selectionIndexes: selectionIndexes</string>
+							<string key="NSBinding">selectionIndexes</string>
+							<string key="NSKeyPath">selectionIndexes</string>
+							<reference key="NSPreviousConnector" ref="710306891"/>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">87</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -402,7 +419,7 @@
 						<reference key="source" ref="282688636"/>
 						<reference key="destination" ref="509710460"/>
 					</object>
-					<int key="connectionID">66</int>
+					<int key="connectionID">74</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -572,12 +589,12 @@
 								<float key="scoringTypeFloat">9</float>
 								<int key="contentType">3</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="296404440">
+							<object class="IBNSLayoutConstraint" id="287600236">
 								<reference key="firstItem" ref="1052934962"/>
-								<int key="firstAttribute">6</int>
+								<int key="firstAttribute">3</int>
 								<int key="relation">0</int>
 								<reference key="secondItem" ref="421502072"/>
-								<int key="secondAttribute">6</int>
+								<int key="secondAttribute">3</int>
 								<float key="multiplier">1</float>
 								<object class="IBLayoutConstant" key="constant">
 									<double key="value">0.0</double>
@@ -588,12 +605,12 @@
 								<float key="scoringTypeFloat">29</float>
 								<int key="contentType">3</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="287600236">
+							<object class="IBNSLayoutConstraint" id="296404440">
 								<reference key="firstItem" ref="1052934962"/>
-								<int key="firstAttribute">3</int>
+								<int key="firstAttribute">6</int>
 								<int key="relation">0</int>
 								<reference key="secondItem" ref="421502072"/>
-								<int key="secondAttribute">3</int>
+								<int key="secondAttribute">6</int>
 								<float key="multiplier">1</float>
 								<object class="IBLayoutConstant" key="constant">
 									<double key="value">0.0</double>
@@ -681,17 +698,17 @@
 						<reference key="parent" ref="421502072"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">68</int>
-						<reference key="object" ref="287600236"/>
-						<reference key="parent" ref="421502072"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">69</int>
 						<reference key="object" ref="296404440"/>
 						<reference key="parent" ref="421502072"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">70</int>
+						<int key="objectID">78</int>
+						<reference key="object" ref="287600236"/>
+						<reference key="parent" ref="421502072"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">80</int>
 						<reference key="object" ref="523009100"/>
 						<reference key="parent" ref="421502072"/>
 					</object>
@@ -719,8 +736,8 @@
 				<string key="24.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<array class="NSMutableArray" key="27.IBNSViewMetadataConstraints">
 					<reference ref="245348591"/>
-					<reference ref="287600236"/>
 					<reference ref="296404440"/>
+					<reference ref="287600236"/>
 					<reference ref="523009100"/>
 				</array>
 				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -735,19 +752,19 @@
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="63.CustomClassName">ITInspectorContainerViewController</string>
+				<string key="63.CustomClassName">ITMultiInspectorViewController</string>
 				<string key="63.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="67.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="68.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="69.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="70.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="78.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="80.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">71</int>
+			<int key="maxID">88</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -782,7 +799,7 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">ITInspectorContainerViewController</string>
+					<string key="className">ITMultiInspectorViewController</string>
 					<string key="superclassName">NSViewController</string>
 					<object class="NSMutableDictionary" key="outlets">
 						<string key="NS.key.0">containerView</string>
@@ -797,21 +814,21 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/ITInspectorContainerViewController.h</string>
+						<string key="minorKey">./Classes/ITMultiInspectorViewController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">ITWindowWithInspectorsWindowController</string>
 					<string key="superclassName">NSWindowController</string>
 					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">inspectorContainerViewController</string>
-						<string key="NS.object.0">ITInspectorContainerViewController</string>
+						<string key="NS.key.0">multiInspectorViewController</string>
+						<string key="NS.object.0">ITMultiInspectorViewController</string>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">inspectorContainerViewController</string>
+						<string key="NS.key.0">multiInspectorViewController</string>
 						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">inspectorContainerViewController</string>
-							<string key="candidateClassName">ITInspectorContainerViewController</string>
+							<string key="name">multiInspectorViewController</string>
+							<string key="candidateClassName">ITMultiInspectorViewController</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

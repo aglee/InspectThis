@@ -9,7 +9,10 @@
 #import "ITWindowWithInspectorsWindowController.h"
 
 /*!
- * Note that in FloatingInspectorWindow.xib our window is an NSPanel instead of
+ * Sets its objectToInspect to match the application's main window, if that
+ * window is a "data window" in the sense defined by ITDataWindowController.
+ *
+ * Note that in FloatingInspectorWindow.xib the window is an NSPanel instead of
  * an NSWindow, so that it can't become the main window.
  */
 @interface ITFloatingInspectorWindowController : ITWindowWithInspectorsWindowController

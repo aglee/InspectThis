@@ -10,6 +10,11 @@
 
 @class ITDataView;
 
+/*!
+ * Manages a "data window".  Displays a list of ITDataModel objects that the
+ * user can select from.  The selected data model is displayed in an ITDataView
+ * and is set to the objectToInspect of our inspectors.
+ */
 @interface ITDataWindowController : ITWindowWithInspectorsWindowController
 
 @property (weak) IBOutlet ITDataView *dataView;
