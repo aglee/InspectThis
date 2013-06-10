@@ -10,6 +10,9 @@
 
 @interface ITAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+#pragma mark Action methods
+
+- (IBAction)openNewDataWindow:(id)sender;
+- (IBAction)showFloatingInspectorWindow:(id)sender;
 
 @end
