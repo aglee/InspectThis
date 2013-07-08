@@ -15,16 +15,16 @@ In this demo app, because the properties being inspected are simple, no subclass
 I'm sure there are more powerful libraries out there that already do the same or similar.  I just felt like rolling my own as an exercise.
 
 
-[1]: https://bitbucket.org/cocoadog/inspectthis/src/da958c079f9e144966c67a0e42ab5431f9d054fa/InspectThis/ITMultiInspectorViewController.h?at=master
-[2]: https://bitbucket.org/cocoadog/inspectthis/src/da958c079f9e144966c67a0e42ab5431f9d054fa/InspectThis/ITMultiInspectorViewController.m?at=master
+[1]: https://github.com/aglee/InspectThis/blob/master/InspectThis/ITMultiInspectorViewController.h
+[2]: https://github.com/aglee/InspectThis/blob/master/InspectThis/ITMultiInspectorViewController.m
 
-[3]: https://bitbucket.org/cocoadog/inspectthis/src/da958c079f9e144966c67a0e42ab5431f9d054fa/InspectThis/ITWindowWithInspectorsWindowController.h?at=master
-[4]: https://bitbucket.org/cocoadog/inspectthis/src/da958c079f9e144966c67a0e42ab5431f9d054fa/InspectThis/ITWindowWithInspectorsWindowController.m?at=master
+[3]: https://github.com/aglee/InspectThis/blob/master/InspectThis/ITWindowWithInspectorsWindowController.h
+[4]: https://github.com/aglee/InspectThis/blob/master/InspectThis/ITWindowWithInspectorsWindowController.m
 
-[5]: https://bitbucket.org/cocoadog/inspectthis/src/da958c079f9e144966c67a0e42ab5431f9d054fa/InspectThis/ITFloatingInspectorWindowController.h?at=master
-[6]: https://bitbucket.org/cocoadog/inspectthis/src/da958c079f9e144966c67a0e42ab5431f9d054fa/InspectThis/ITFloatingInspectorWindowController.m?at=master
+[5]: https://github.com/aglee/InspectThis/blob/master/InspectThis/ITFloatingInspectorWindowController.h
+[6]: https://github.com/aglee/InspectThis/blob/master/InspectThis/ITFloatingInspectorWindowController.m
 
-[7]: https://bitbucket.org/cocoadog/inspectthis/src/da958c079f9e144966c67a0e42ab5431f9d054fa/InspectThis/ITDataWindowController.h?at=master
-[8]: https://bitbucket.org/cocoadog/inspectthis/src/da958c079f9e144966c67a0e42ab5431f9d054fa/InspectThis/ITDataWindowController.m?at=master
+[7]: https://github.com/aglee/InspectThis/blob/master/InspectThis/ITDataWindowController.h
+[8]: https://github.com/aglee/InspectThis/blob/master/InspectThis/ITDataWindowController.m
 
 
