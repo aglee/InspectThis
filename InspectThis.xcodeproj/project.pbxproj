@@ -54,7 +54,7 @@
 		73E6953F1764D76C00C6D7D0 /* ITAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITAppDelegate.h; sourceTree = "<group>"; };
 		73E695401764D76C00C6D7D0 /* ITAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITAppDelegate.m; sourceTree = "<group>"; };
 		73E695431764D76C00C6D7D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		73E6954A1764D86800C6D7D0 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		73E6954A1764D86800C6D7D0 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.markdown; path = ../README.markdown; sourceTree = "<group>"; };
 		73E6954B1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITWindowWithInspectorsWindowController.h; sourceTree = "<group>"; };
 		73E6954C1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITWindowWithInspectorsWindowController.m; sourceTree = "<group>"; };
 		73E695501764D96F00C6D7D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DataWindow.xib; sourceTree = "<group>"; };
