@@ -30,6 +30,7 @@
 	ITWindowWithInspectorsWindowController *wc = [[ITDataWindowController alloc] initWithWindowNibName:@"DataWindow"];
 
 	[_dataWindowControllers addObject:wc];
+	[wc setShouldCascadeWindows:YES];
 	[[wc window] makeKeyAndOrderFront:nil];
 }
 
@@ -50,7 +51,9 @@
 	[self _startListeningForWindowClose];
 
 	// Display initial windows.
+	[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
 	[self showFloatingInspectorWindow:nil];
+	[self openNewDataWindow:nil];
 	[self openNewDataWindow:nil];
 }
 
