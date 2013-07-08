@@ -51,7 +51,7 @@
 		[[_dataModel backgroundColor] set];
 		NSRectFill(dirtyRect);
 
-		[[_dataModel text] drawAtPoint:NSMakePoint(0, 0)
+		[[_dataModel text] drawAtPoint:NSZeroPoint
 						withAttributes:(@{
 										NSFontAttributeName: [NSFont fontWithName:@"Georgia" size:48],
 										NSForegroundColorAttributeName: ([_dataModel fontColor] ?: [NSColor blackColor])
