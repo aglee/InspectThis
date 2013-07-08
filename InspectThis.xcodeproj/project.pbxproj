@@ -54,7 +54,7 @@
 		73E6953F1764D76C00C6D7D0 /* ITAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITAppDelegate.h; sourceTree = "<group>"; };
 		73E695401764D76C00C6D7D0 /* ITAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITAppDelegate.m; sourceTree = "<group>"; };
 		73E695431764D76C00C6D7D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		73E6954A1764D86800C6D7D0 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.markdown; path = ../README.markdown; sourceTree = "<group>"; };
+		73E6954A1764D86800C6D7D0 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		73E6954B1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITWindowWithInspectorsWindowController.h; sourceTree = "<group>"; };
 		73E6954C1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITWindowWithInspectorsWindowController.m; sourceTree = "<group>"; };
 		73E695501764D96F00C6D7D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DataWindow.xib; sourceTree = "<group>"; };
@@ -86,8 +86,10 @@
 			children = (
 				73E6953F1764D76C00C6D7D0 /* ITAppDelegate.h */,
 				73E695401764D76C00C6D7D0 /* ITAppDelegate.m */,
+				73265D121764F3B4003AABF3 /* ITMultiInspectorViewController.h */,
+				73265D131764F3B4003AABF3 /* ITMultiInspectorViewController.m */,
 				737685441766743C00589EF2 /* Windows with Inspectors */,
-				737685451766745C00589EF2 /* Inspector Views */,
+				737685451766745C00589EF2 /* Nibs for Inspector Views */,
 			);
 			name = "Controller Classes";
 			sourceTree = "<group>";
@@ -106,22 +108,20 @@
 			children = (
 				73E6954B1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.h */,
 				73E6954C1764D8E700C6D7D0 /* ITWindowWithInspectorsWindowController.m */,
+				737685471766747B00589EF2 /* Singleton Inspector Window */,
 				737685461766747400589EF2 /* Data Window */,
-				737685471766747B00589EF2 /* Floating Inspector Window */,
 			);
 			name = "Windows with Inspectors";
 			sourceTree = "<group>";
 		};
-		737685451766745C00589EF2 /* Inspector Views */ = {
+		737685451766745C00589EF2 /* Nibs for Inspector Views */ = {
 			isa = PBXGroup;
 			children = (
-				73265D121764F3B4003AABF3 /* ITMultiInspectorViewController.h */,
-				73265D131764F3B4003AABF3 /* ITMultiInspectorViewController.m */,
 				7376853517661AA300589EF2 /* BackgroundColorInspector.xib */,
 				7376854117666C8D00589EF2 /* FontColorInspector.xib */,
 				7376853817661D1800589EF2 /* TextInspector.xib */,
 			);
-			name = "Inspector Views";
+			name = "Nibs for Inspector Views";
 			sourceTree = "<group>";
 		};
 		737685461766747400589EF2 /* Data Window */ = {
@@ -134,19 +134,20 @@
 			name = "Data Window";
 			sourceTree = "<group>";
 		};
-		737685471766747B00589EF2 /* Floating Inspector Window */ = {
+		737685471766747B00589EF2 /* Singleton Inspector Window */ = {
 			isa = PBXGroup;
 			children = (
 				7376853B1766202A00589EF2 /* ITFloatingInspectorWindowController.h */,
 				7376853C1766202A00589EF2 /* ITFloatingInspectorWindowController.m */,
 				7376853E1766261000589EF2 /* FloatingInspectorWindow.xib */,
 			);
-			name = "Floating Inspector Window";
+			name = "Singleton Inspector Window";
 			sourceTree = "<group>";
 		};
 		73E695211764D76C00C6D7D0 = {
 			isa = PBXGroup;
 			children = (
+				73E6954A1764D86800C6D7D0 /* README.markdown */,
 				73E695331764D76C00C6D7D0 /* InspectThis */,
 				73E6952C1764D76C00C6D7D0 /* Frameworks */,
 				73E6952B1764D76C00C6D7D0 /* Products */,
@@ -183,7 +184,6 @@
 		73E695331764D76C00C6D7D0 /* InspectThis */ = {
 			isa = PBXGroup;
 			children = (
-				73E6954A1764D86800C6D7D0 /* README.markdown */,
 				73768531176539D900589EF2 /* Model Classes */,
 				73265D0D1764E70A003AABF3 /* View Classes */,
 				73265D0E1764E71D003AABF3 /* Controller Classes */,
