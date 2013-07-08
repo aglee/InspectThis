@@ -10,7 +10,7 @@ ITFloatingInspectorWindowController ([.h][5], [.m][6]) shows a way to implement 
 
 ITDataWindowController ([.h][7], [.m][8]) shows a way to implement document windows that each have their own inspector views.  Within each document window, the inspector views reflect the selected object in that window.
 
-Because the properties being inspected are simple, no subclassing is needed for the inspector views themselves, just different nibs.  Each inspector view is implemented using a plain NSView, standard Cocoa controls, and a plain NSViewController, along with bindings.
+In this demo app, because the properties being inspected are simple, no subclassing is needed for the inspector views themselves, just different nibs.  Each inspector view is implemented using a plain NSView, standard Cocoa controls, and a plain NSViewController, along with bindings.
 
 I'm sure there are more powerful libraries out there that already do the same or similar.  I just felt like rolling my own as an exercise.
 
