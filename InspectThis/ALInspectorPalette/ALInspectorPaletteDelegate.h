@@ -16,13 +16,13 @@
 @required
 
 /*!
- * Assumes the inspector palette has no inspectors.  Registers all inspectors
+ * Assumes the inspector palette has no inspectors.  Adds all inspectors
  * appropriate for the palette's objectToInspect.
  *
  * When implementing this, remember to handle the case where the objectToInspect
  * is nil.
  */
-- (void)registerInspectorsForInspectorPalette:(ALInspectorPalette *)inspectorPalette;
+- (void)addInspectorsToInspectorPalette:(ALInspectorPalette *)inspectorPalette;
 
 #pragma mark - Optional methods
 @optional

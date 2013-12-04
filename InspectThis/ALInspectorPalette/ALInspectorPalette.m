@@ -36,6 +36,11 @@
 
 - (void)removeAllInspectorViewControllers
 {
+	for (NSViewController *vc in _inspectorViewControllers)
+	{
+		[vc setRepresentedObject:nil];
+	}
+
 	[_inspectorViewControllers removeAllObjects];
 }
 
@@ -58,7 +63,7 @@
 	{
 		[self unloadContainerView];
 		[self removeAllInspectorViewControllers];
-		[[self delegate] registerInspectorsForInspectorPalette:self];
+		[[self delegate] addInspectorsToInspectorPalette:self];
 		[self reloadContainerView];
 	}
 

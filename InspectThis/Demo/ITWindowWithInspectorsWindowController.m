@@ -13,7 +13,7 @@
 
 #pragma mark - ALInspectorPaletteDelegate methods
 
-- (void)registerInspectorsForInspectorPalette:(ALInspectorPalette *)inspectorPalette
+- (void)addInspectorsToInspectorPalette:(ALInspectorPalette *)inspectorPalette
 {
 	[self _addInspectorWithNibName:@"TextInspector"];
 	[self _addInspectorWithNibName:@"FontColorInspector"];

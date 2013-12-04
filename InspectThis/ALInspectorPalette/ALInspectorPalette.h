@@ -28,11 +28,10 @@
  * will automatically reflect the change.  This means you can often use a plain
  * NSViewController for the inspectors, because no glue code is needed.
  *
- * Inspectors -- or more precisely, their view controllers -- must be registered
- * with the inspector palette.  This can be done by the delegate, or you can
- * omit the delegate and register the inspectors yourself.  One reason to
- * register them yourself would be if there is one fixed set of inspectors that
- * will never need to be swapped out regardless of the objectToInspect.
+ * The delegate's role is to add inspector view controllers to the inspector
+ * palette.  You can also omit the delegate and add the inspectors yourself.
+ * One reason to add them yourself would be if there is one fixed set of
+ * inspectors that will never need to be swapped out.
  *
  * Inspector views are not necessarily direct subviews of the container view,
  * nor is the container view necessarily a plain NSView; it could be an outline
