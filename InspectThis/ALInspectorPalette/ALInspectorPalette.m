@@ -1,5 +1,5 @@
 //
-//  ITMultiInspectorViewController.m
+//  ALInspectorPalette.m
 //  InspectThis
 //
 //  Created by Andy Lee on 6/9/13.

@@ -12,9 +12,8 @@
 @class ALInspectorPalette;
 
 /*!
- * Abstract base class.  Manages a window that contains a "multi-inspector view"
- * as defined by ITMultiInspectorViewController.  Every instance has the same
- * set of inspectors.
+ * Abstract base class.  Manages a window that contains an inspector palette.
+ * Every instance has the same set of inspectors.
  */
 @interface ITWindowWithInspectorsWindowController : NSWindowController <ALInspectorPaletteDelegate>
 
