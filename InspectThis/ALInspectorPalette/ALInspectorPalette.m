@@ -29,12 +29,12 @@
 	return [NSView class];
 }
 
-- (void)registerInspectorWithViewController:(NSViewController *)inspectorVC
+- (void)addInspectorViewController:(NSViewController *)inspectorVC
 {
 	[_inspectorViewControllers addObject:inspectorVC];
 }
 
-- (void)unregisterAllInspectors
+- (void)removeAllInspectorViewControllers
 {
 	[_inspectorViewControllers removeAllObjects];
 }
@@ -57,7 +57,7 @@
 										oldObject:_objectToInspect])
 	{
 		[self unloadContainerView];
-		[self unregisterAllInspectors];
+		[self removeAllInspectorViewControllers];
 		[[self delegate] registerInspectorsForInspectorPalette:self];
 		[self reloadContainerView];
 	}

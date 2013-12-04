@@ -66,13 +66,13 @@
  * Adds the view controller to the receiver's internal array.  Does not modify
  * the view hierarchy.
  */
-- (void)registerInspectorWithViewController:(NSViewController *)inspectorVC;
+- (void)addInspectorViewController:(NSViewController *)inspectorVC;
 
 /*!
  * Removes all inspector view controllers from the receiver's internal array.
  * Does not modify the view hiearchy.
  */
-- (void)unregisterAllInspectors;
+- (void)removeAllInspectorViewControllers;
 
 /*!
  * Subclasses must override this method.

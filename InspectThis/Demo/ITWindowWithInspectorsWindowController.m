@@ -26,7 +26,7 @@
 {
 	NSViewController *inspectorVC = [[NSViewController alloc] initWithNibName:nibName bundle:nil];
 
-	[[self inspectorPalette] registerInspectorWithViewController:inspectorVC];
+	[[self inspectorPalette] addInspectorViewController:inspectorVC];
 }
 
 @end
