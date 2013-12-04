@@ -7,17 +7,14 @@
 //
 
 #import "ITWindowWithInspectorsWindowController.h"
-#import "ITMultiInspectorViewController.h"
+#import "ALInspectorPalette.h"
 
 @implementation ITWindowWithInspectorsWindowController
 
-#pragma mark NSWindowController methods
+#pragma mark - ALInspectorPaletteDelegate methods
 
-- (void)windowDidLoad
+- (void)registerInspectorsForInspectorPalette:(ALInspectorPalette *)inspectorPalette
 {
-	[super windowDidLoad];
-
-	// Add inspectors.
 	[self _addInspectorWithNibName:@"TextInspector"];
 	[self _addInspectorWithNibName:@"FontColorInspector"];
 	[self _addInspectorWithNibName:@"BackgroundColorInspector"];
@@ -29,7 +26,7 @@
 {
 	NSViewController *inspectorVC = [[NSViewController alloc] initWithNibName:nibName bundle:nil];
 
-	[[self multiInspectorViewController] addInspectorWithViewController:inspectorVC];
+	[[self inspectorPalette] registerInspectorWithViewController:inspectorVC];
 }
 
 @end

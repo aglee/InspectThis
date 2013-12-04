@@ -9,7 +9,7 @@
 #import "ITDataWindowController.h"
 #import "ITDataModel.h"
 #import "ITDataView.h"
-#import "ITMultiInspectorViewController.h"
+#import "ALInspectorPalette.h"
 
 @implementation ITDataWindowController
 {
@@ -39,7 +39,7 @@
 	ITDataModel *selectedDataModel = [self _dataModelAtIndex:selectedRow];
 	
 	[_dataView setDataModel:selectedDataModel];
-	[[self multiInspectorViewController] setObjectToInspect:selectedDataModel];
+	[[self inspectorPalette] setObjectToInspect:selectedDataModel];
 }
 
 #pragma mark NSSplitViewDelegate methods

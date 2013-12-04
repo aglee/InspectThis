@@ -7,16 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ALInspectorPaletteDelegate.h"
 
-@class ITMultiInspectorViewController;
+@class ALInspectorPalette;
 
 /*!
  * Abstract base class.  Manages a window that contains a "multi-inspector view"
  * as defined by ITMultiInspectorViewController.  Every instance has the same
  * set of inspectors.
  */
-@interface ITWindowWithInspectorsWindowController : NSWindowController
+@interface ITWindowWithInspectorsWindowController : NSWindowController <ALInspectorPaletteDelegate>
 
-@property (strong) IBOutlet ITMultiInspectorViewController *multiInspectorViewController;
+@property (strong) IBOutlet ALInspectorPalette *inspectorPalette;
 
 @end
